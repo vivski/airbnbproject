@@ -4,8 +4,14 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Avatar from "../Avatar";
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
+
 
 const UserMenu = () => {
+// função que vai usar a função de registro
+const registerModal = useRegisterModal();
+//
+
     const [isOpen,setIsOpen] = useState(false);
 
     const toggleOpen = useCallback(() => {
@@ -76,9 +82,10 @@ const UserMenu = () => {
         onClick={()=>{}}
         label="Login" />
         <MenuItem
-        onClick={()=>{}}
+        onClick={registerModal.onOpen}
         label="Sign up" 
         />
+        
         </>
             </div>  
         </div>
@@ -93,3 +100,5 @@ export default UserMenu;
 //a segunda div tinha hidden como className
 //porem ela estava ocultando o 'airbnb your home
 // e eu removi por isso
+
+//esta função vai receber o modelo de registro (RegisterModal)
