@@ -81,3 +81,5 @@ model Reservation {
    user User @relation(fields: [userId], references: [id], onDelete: Cascade)
    listening Listening @relation(fields: [listeningId], references: [id], onDelete: Cascade)
 }
+
+//12:25
