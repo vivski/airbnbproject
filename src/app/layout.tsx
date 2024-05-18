@@ -27,7 +27,9 @@ export default function RootLayout({
       {/* <RegisterModal /> */}
          <Navbar /> 
       </ClientOnly>
+      <div className="pb-20 pt-28">
       {children} 
+      </div>
       </body>
     </html>
   );
