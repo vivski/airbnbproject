@@ -28,8 +28,8 @@ export default function Home() {
 
        <Card 
         imageSrc="/images/img/ouropreto.jpg"
-        city="Ouro Preto"
-        country="Brasil"
+        city="Cusco"
+        country="Peru"
         type="Countryside"
         price="R$ 2000.00" />
 
