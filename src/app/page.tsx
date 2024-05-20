@@ -27,12 +27,6 @@ export default function Home() {
         type="Countryside"
         price="R$ 2000.00" />
 
-       <Card 
-        imageSrc="/images/img/ouropreto.jpg"
-        city="Cusco"
-        country="Peru"
-        type="Countryside"
-        price="R$ 2000.00" />
 
         <Card 
         imageSrc="https://github.com/vivski/airbnbproject/blob/master/public/images/img/limaperu.jpg?raw=true"
